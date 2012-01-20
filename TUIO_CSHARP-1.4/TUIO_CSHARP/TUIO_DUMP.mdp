@@ -1,0 +1,34 @@
+<Project name="TUIO_LIB" fileversion="2.0" language="C#" clr-version="Net_2_0" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="Release">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="libTUIO" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="libTUIO" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
+      <EnvironmentVariables />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="OSC.NET/OSCBundle.cs" subtype="Code" buildaction="Compile" />
+    <File name="OSC.NET/OSCMessage.cs" subtype="Code" buildaction="Compile" />
+    <File name="OSC.NET/OSCPacket.cs" subtype="Code" buildaction="Compile" />
+    <File name="OSC.NET/OSCReceiver.cs" subtype="Code" buildaction="Compile" />
+    <File name="OSC.NET/OSCTransmitter.cs" subtype="Code" buildaction="Compile" />
+    <File name="TUIO/TuioContainer.cs" subtype="Code" buildaction="Compile" />
+    <File name="TUIO/TuioCursor.cs" subtype="Code" buildaction="Compile" />
+    <File name="TUIO/TuioListener.cs" subtype="Code" buildaction="Compile" />
+    <File name="TUIO/TuioObject.cs" subtype="Code" buildaction="Compile" />
+    <File name="TUIO/TuioPoint.cs" subtype="Code" buildaction="Compile" />
+    <File name="TUIO/TuioTime.cs" subtype="Code" buildaction="Compile" />
+    <File name="TUIO/TuioClient.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+</Project>

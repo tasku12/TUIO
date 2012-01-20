@@ -1,0 +1,24 @@
+<Combine name="TUIO_CSHARP" fileversion="2.0">
+  <Configurations active="Release">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="TUIO_DEMO" configuration="Debug" />
+      <Entry build="True" name="TUIO_LIB" configuration="Debug" />
+      <Entry build="True" name="TUIO_DUMP" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="TUIO_DEMO" configuration="Release" />
+      <Entry build="True" name="TUIO_LIB" configuration="Release" />
+      <Entry build="True" name="TUIO_DUMP" configuration="Release" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="TUIO_DEMO" single="True">
+    <Execute type="None" entry="TUIO_DEMO" />
+    <Execute type="None" entry="TUIO_LIB" />
+    <Execute type="None" entry="TUIO_DUMP" />
+  </StartMode>
+  <Entries>
+    <Entry filename="TUIO_DEMO.mdp" />
+    <Entry filename="TUIO_DUMP.mdp" />
+    <Entry filename="TUIO_LIB.mdp" />
+  </Entries>
+</Combine>
